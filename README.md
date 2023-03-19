@@ -83,7 +83,7 @@ else:
 <intruccion_7_bloque_1>
 <intruccion_8_bloque_1>
 ```
-**Pro tip:** Los principales erroes de sintaxis en Python es por bloques de codigo mal indentados.
+**Pro tip:** Los principales errores de sintaxis en Python es por bloques de código mal indentados.
 
 **Pro tip:** Un cambio de indentación solo se puede dar cuando se ingresa a una nueva estructura de flujo (e.g. un condicional o un bucle), un cambio de indentación en la misma secuencia constituye un error de sintaxis.
 
@@ -199,7 +199,7 @@ else:
 ```
 
 ### Condicional ternarario
-Es uan forma de abreviar el condicional cuando solo cuenta con una instrucción en el bloque de ejecución.
+Es una forma de abreviar el condicional cuando solo cuenta con una instrucción en el bloque de ejecución.
 
 Retomando el ejemplo del valor absoluto.
 ```python
@@ -244,7 +244,7 @@ bloque_siguiente
 ```
 
 La codificación en Python de las estructuras condicionales enlazadas es la siguiente, donde la palabra clave elif sirve para establecer la opción
-alternativa donde después de ejecutar las instrucciones previas <bloque_previo> se ejecutará <bloque_verdadero_1> si <condicion_1> se evalúa verdadero, en caso de que <condicion_1> se evalúe falso de ejecutará <bloque_verdadero_2> si <condicion_2> se evalúa verdadero, y así se continuará revisando cada una de las condiciones si la anterior se evalúa falso. Si algún <cond_n-1> se evalúa verdadero se ejecuta su respectivo <bloque__verdadero_n-1> y después de ejecutar todas las instrucciones del <bloque_verdadero_n-1> se continua ejecutando las instrucciones siguientes al condicional enlazado <bloque_siguiente>.
+alternativa donde después de ejecutar las instrucciones previas <bloque_previo> se ejecutará <bloque_verdadero_1> si <condicion_1> se evalúa verdadero, en caso de que <condicion_1> se evalúe falso se ejecutará <bloque_verdadero_2> si <condicion_2> se evalúa verdadero, y así se continuará revisando cada una de las condiciones si la anterior se evalúa falso. Si algún <cond_n-1> se evalúa verdadero se ejecuta su respectivo <bloque__verdadero_n-1> y después de ejecutar todas las instrucciones del <bloque_verdadero_n-1> se continua ejecutando las instrucciones siguientes al condicional enlazado <bloque_siguiente>.
 Si ninguna <cond_i> se evalúa verdadero y la parte else existe al final de
 las estructuras if enlazadas entonces se ejecutarán las instrucciones del
 <bloque_falso>.
@@ -277,8 +277,8 @@ $$IMC = \frac{masa}{altura^2}$$
 ```python
 altura : float
 altura = float(input("Ingrese la altura en metros: ")) 
-masa : float
-masa = float(input("Ingrese el peso en kg: "))
+peso : float
+peso = float(input("Ingrese el peso en kg: "))
 imc : float = (masa)/(altura**2) 
 if imc < 18.5 :
   print("Bajo peso")
@@ -295,7 +295,7 @@ else:
 ## Estructura match-case (switch-case)
 **Solo funciona para python 3.10+**
 
-Consiste en una estructura de selección que toma una condición de referencia y establece bloques de ejecución en caso de coincidencia especifica. Resulta altamente útil en menus con opcines fijas. Esta estructura está presente en C o C++ de la forma *switch-case*.
+Consiste en una estructura de selección que toma una condición de referencia y establece bloques de ejecución en caso de coincidencia específica. Resulta altamente útil en menus con opciones fijas. Esta estructura está presente en C o C++ de la forma *switch-case*.
 
 **Diagrama de flujo**
 ```mermaid
